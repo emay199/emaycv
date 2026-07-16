@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emay — QA Software Engineer</title>
+  <meta name="description" content="Emay — QA Software Engineer specializing in automated testing, Playwright, Selenium, and quality assurance for web and mobile applications." />
+  <meta name="keywords" content="QA Engineer, Software Tester, Playwright, Selenium, Python, Automation Testing" />
+  <meta property="og:title" content="Emay — QA Software Engineer" />
+  <meta property="og:description" content="Portfolio & CV of a QA Software Engineer with expertise in automation testing." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo" id="nav-logo">emay<span class="dot">.</span>dev</a>
+      <nav class="nav__links" id="nav-links">
+        <a href="#about" id="nav-about">About</a>
+        <a href="#skills" id="nav-skills">Skills</a>
+        <a href="#experience" id="nav-experience">Experience</a>
+        <a href="#projects" id="nav-projects">Projects</a>
+        <a href="#education" id="nav-education">Education</a>
+        <a href="#contact" id="nav-contact-link">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn--sm" id="nav-cta">Hire Me</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu">
+      <a href="#about" id="mob-about">About</a>
+      <a href="#skills" id="mob-skills">Skills</a>
+      <a href="#experience" id="mob-experience">Experience</a>
+      <a href="#projects" id="mob-projects">Projects</a>
+      <a href="#education" id="mob-education">Education</a>
+      <a href="#contact" id="mob-contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-lines" aria-hidden="true">
+      <div class="line line--1"></div>
+      <div class="line line--2"></div>
+      <div class="line line--3"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content" data-animate="fade-up">
+        <span class="hero__tag" id="hero-tag">QA Software Engineer</span>
+        <h1 class="hero__name" id="hero-name">
+          Hi, I'm <em>Emay</em>
+        </h1>
+        <p class="hero__subtitle" id="hero-subtitle">
+          I build confidence into software — through structured testing,<br />
+          automation frameworks, and an obsession with quality.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary" id="hero-cta-primary">View My Work</a>
+          <a href="assets/resume.pdf" class="btn btn--outline" id="hero-cta-resume" download>Download CV</a>
+        </div>
+        <div class="hero__stats" id="hero-stats">
+          <div class="stat">
+            <span class="stat__num" data-target="3">0</span><span class="stat__unit">+</span>
+            <p class="stat__label">Years of Experience</p>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-target="120">0</span><span class="stat__unit">+</span>
+            <p class="stat__label">Test Cases Written</p>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-target="15">0</span><span class="stat__unit">+</span>
+            <p class="stat__label">Projects Tested</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero__avatar-wrap" data-animate="fade-left">
+        <div class="hero__avatar-ring"></div>
+        <img src="assets/avatar.png" alt="Emay — QA Engineer" class="hero__avatar" id="hero-avatar" />
+        <div class="hero__badge" id="hero-badge">
+          <span class="badge__icon">✓</span>
+          <span>Open to work</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" id="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">01 — About</span>
+        <h2 class="section-title">A little about me</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text" data-animate="fade-up">
+          <p>
+            I'm a QA Software Engineer with a passion for ensuring digital products work flawlessly.
+            I specialize in building robust automated test suites, identifying edge cases humans miss,
+            and translating complex requirements into precise, repeatable test scenarios.
+          </p>
+          <p>
+            I believe quality is not just a phase — it's a mindset that should be embedded from day one.
+            I work closely with developers, PMs, and stakeholders to shift testing left and catch bugs
+            before they become expensive problems.
+          </p>
+          <div class="about__quick-info" id="about-quick-info">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <span>Ho Chi Minh City, Vietnam</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💼</span>
+              <span>Available for freelance & full-time</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🌐</span>
+              <span>English & Vietnamese</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__values" data-animate="fade-up">
+          <div class="value-card" id="value-quality">
+            <span class="value-icon">🎯</span>
+            <h3>Quality First</h3>
+            <p>Every build deserves thorough validation before it touches real users.</p>
+          </div>
+          <div class="value-card" id="value-automation">
+            <span class="value-icon">⚡</span>
+            <h3>Automate Everything</h3>
+            <p>If a human does it twice, a machine can do it a thousand times — reliably.</p>
+          </div>
+          <div class="value-card" id="value-collab">
+            <span class="value-icon">🤝</span>
+            <h3>Collaborative QA</h3>
+            <p>Testing is a team sport. I bridge the gap between dev, product, and users.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">02 — Skills</span>
+        <h2 class="section-title">Technical toolkit</h2>
+      </div>
+      <div class="skills__grid" id="skills-grid">
+
+        <div class="skill-group" data-animate="fade-up" id="skill-group-automation">
+          <h3 class="skill-group__title">Test Automation</h3>
+          <div class="skill-tags">
+            <span class="tag tag--primary">Playwright</span>
+            <span class="tag tag--primary">Selenium</span>
+            <span class="tag tag--primary">Cypress</span>
+            <span class="tag tag--secondary">Appium</span>
+            <span class="tag tag--secondary">Robot Framework</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar" id="skill-playwright">
+              <div class="skill-bar__label"><span>Playwright</span><span>90%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar" id="skill-selenium">
+              <div class="skill-bar__label"><span>Selenium</span><span>80%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar" id="skill-cypress">
+              <div class="skill-bar__label"><span>Cypress</span><span>70%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group" data-animate="fade-up" id="skill-group-lang">
+          <h3 class="skill-group__title">Languages</h3>
+          <div class="skill-tags">
+            <span class="tag tag--primary">Python</span>
+            <span class="tag tag--primary">TypeScript</span>
+            <span class="tag tag--secondary">JavaScript</span>
+            <span class="tag tag--secondary">Bash</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar" id="skill-python">
+              <div class="skill-bar__label"><span>Python</span><span>85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar" id="skill-ts">
+              <div class="skill-bar__label"><span>TypeScript</span><span>75%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group" data-animate="fade-up" id="skill-group-qa">
+          <h3 class="skill-group__title">QA Methodologies</h3>
+          <div class="skill-tags">
+            <span class="tag tag--primary">BDD / TDD</span>
+            <span class="tag tag--primary">API Testing</span>
+            <span class="tag tag--secondary">Performance Testing</span>
+            <span class="tag tag--secondary">Exploratory Testing</span>
+            <span class="tag tag--secondary">Regression Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-group" data-animate="fade-up" id="skill-group-tools">
+          <h3 class="skill-group__title">Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="tag tag--primary">Jira</span>
+            <span class="tag tag--primary">Postman</span>
+            <span class="tag tag--primary">Git / GitHub</span>
+            <span class="tag tag--secondary">Docker</span>
+            <span class="tag tag--secondary">CI/CD (GitHub Actions)</span>
+            <span class="tag tag--secondary">ClickUp</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">03 — Experience</span>
+        <h2 class="section-title">Where I've worked</h2>
+      </div>
+      <div class="timeline" id="experience-timeline">
+
+        <div class="timeline__item" data-animate="fade-up" id="exp-1">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__date">Jan 2024 — Present</span>
+              <span class="timeline__badge">Current</span>
+            </div>
+            <h3 class="timeline__role">QA Automation Engineer</h3>
+            <p class="timeline__company">Company Name Inc. · Ho Chi Minh City</p>
+            <ul class="timeline__bullets">
+              <li>Built end-to-end Playwright test suite covering 200+ critical user flows</li>
+              <li>Reduced regression testing time from 8h to 45min via automation</li>
+              <li>Integrated test pipeline into GitHub Actions CI/CD for every PR</li>
+              <li>Defined QA standards and documented test strategies for the team</li>
+            </ul>
+            <div class="timeline__tech">
+              <span class="tag tag--sm">Playwright</span>
+              <span class="tag tag--sm">TypeScript</span>
+              <span class="tag tag--sm">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-animate="fade-up" id="exp-2">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__date">Jun 2022 — Dec 2023</span>
+            </div>
+            <h3 class="timeline__role">Software QA Tester</h3>
+            <p class="timeline__company">Previous Company Ltd. · Ho Chi Minh City</p>
+            <ul class="timeline__bullets">
+              <li>Manually tested web and mobile applications across multiple platforms</li>
+              <li>Wrote comprehensive test cases and reported 300+ bugs in Jira</li>
+              <li>Collaborated with dev team in Agile sprints for timely releases</li>
+            </ul>
+            <div class="timeline__tech">
+              <span class="tag tag--sm">Selenium</span>
+              <span class="tag tag--sm">Python</span>
+              <span class="tag tag--sm">Jira</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">04 — Projects</span>
+        <h2 class="section-title">Notable work</h2>
+      </div>
+      <div class="projects__grid" id="projects-grid">
+
+        <article class="project-card" data-animate="fade-up" id="project-1">
+          <div class="project-card__header">
+            <span class="project-card__icon">🧪</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" id="project-1-github" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="#" class="project-link" id="project-1-live" aria-label="Live Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">E2E Automation Suite</h3>
+          <p class="project-card__desc">
+            Full end-to-end Playwright test framework for a fintech web platform. 
+            Covers authentication, trading flows, and reporting with 95%+ coverage.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">Playwright</span>
+            <span class="tag tag--sm">TypeScript</span>
+            <span class="tag tag--sm">CI/CD</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" id="project-2">
+          <div class="project-card__header">
+            <span class="project-card__icon">🐍</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" id="project-2-github" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="#" class="project-link" id="project-2-live" aria-label="Live Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">API Test Framework</h3>
+          <p class="project-card__desc">
+            Python-based REST API testing framework using pytest + requests. 
+            Includes data-driven tests, schema validation, and Allure reports.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">Python</span>
+            <span class="tag tag--sm">pytest</span>
+            <span class="tag tag--sm">Postman</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" id="project-3">
+          <div class="project-card__header">
+            <span class="project-card__icon">📊</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" id="project-3-github" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">QA Dashboard</h3>
+          <p class="project-card__desc">
+            Internal dashboard for tracking test metrics, coverage reports,
+            and bug trend analytics. Integrated with Jira and GitHub Actions.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">JavaScript</span>
+            <span class="tag tag--sm">Jira API</span>
+            <span class="tag tag--sm">Charts.js</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION & CERTIFICATIONS ─── -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">05 — Education & Certs</span>
+        <h2 class="section-title">Academic & learning journey</h2>
+      </div>
+      <div class="edu-cert__grid">
+
+        <div class="edu-side" data-animate="fade-up">
+          <h3 class="edu-cert__subtitle">Education</h3>
+          <div class="edu-item" id="edu-1">
+            <div class="edu-item__icon">🎓</div>
+            <div>
+              <h4>Bachelor of Computer Science</h4>
+              <p class="edu-item__school">University of Technology · Ho Chi Minh City</p>
+              <p class="edu-item__year">2018 — 2022</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-side" data-animate="fade-up">
+          <h3 class="edu-cert__subtitle">Certifications</h3>
+          <div class="cert-list" id="cert-list">
+            <div class="cert-item" id="cert-istqb">
+              <div class="cert-icon">📜</div>
+              <div>
+                <h4>ISTQB Foundation Level</h4>
+                <p class="cert-item__org">ISTQB · 2023</p>
+              </div>
+              <span class="cert-badge">Certified</span>
+            </div>
+            <div class="cert-item" id="cert-playwright">
+              <div class="cert-icon">🎭</div>
+              <div>
+                <h4>Playwright Advanced Testing</h4>
+                <p class="cert-item__org">Udemy · 2024</p>
+              </div>
+              <span class="cert-badge">Completed</span>
+            </div>
+            <div class="cert-item" id="cert-python">
+              <div class="cert-icon">🐍</div>
+              <div>
+                <h4>Python for Test Automation</h4>
+                <p class="cert-item__org">Test Automation University · 2023</p>
+              </div>
+              <span class="cert-badge">Completed</span>
+            </div>
+            <div class="cert-item" id="cert-agile">
+              <div class="cert-icon">🔄</div>
+              <div>
+                <h4>Agile Scrum Fundamentals</h4>
+                <p class="cert-item__org">Coursera · 2022</p>
+              </div>
+              <span class="cert-badge">Completed</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">06 — Contact</span>
+        <h2 class="section-title">Let's work together</h2>
+      </div>
+      <div class="contact__inner" data-animate="fade-up">
+        <p class="contact__intro">
+          Whether you need a QA engineer for a project, want to discuss automation strategies,
+          or just say hello — my inbox is always open.
+        </p>
+        <div class="contact__links" id="contact-links">
+          <a href="mailto:hello@emay.dev" class="contact-link" id="contact-email">
+            <span class="contact-link__icon">✉️</span>
+            <div>
+              <span class="contact-link__label">Email</span>
+              <span class="contact-link__value">hello@emay.dev</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/emay" target="_blank" rel="noopener" class="contact-link" id="contact-linkedin">
+            <span class="contact-link__icon">💼</span>
+            <div>
+              <span class="contact-link__label">LinkedIn</span>
+              <span class="contact-link__value">linkedin.com/in/emay</span>
+            </div>
+          </a>
+          <a href="https://github.com/emay" target="_blank" rel="noopener" class="contact-link" id="contact-github">
+            <span class="contact-link__icon">🐙</span>
+            <div>
+              <span class="contact-link__label">GitHub</span>
+              <span class="contact-link__value">github.com/emay</span>
+            </div>
+          </a>
+        </div>
+        <form class="contact__form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" name="email" placeholder="jane@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="form-submit">Send Message →</button>
+          <p class="form-note" id="form-note">I typically respond within 24 hours.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2025 Emay. Built with care & deployed on Cloudflare Pages.</p>
+      <div class="footer__links">
+        <a href="https://github.com/emay" target="_blank" rel="noopener" id="footer-github">GitHub</a>
+        <a href="https://linkedin.com/in/emay" target="_blank" rel="noopener" id="footer-linkedin">LinkedIn</a>
+        <a href="mailto:hello@emay.dev" id="footer-email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
