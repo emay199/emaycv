@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
 
@@ -28,16 +28,14 @@
         <a href="#education" id="nav-education" data-i18n="nav-education">Education</a>
         <a href="#contact" id="nav-contact-link" data-i18n="nav-contact">Contact</a>
       </nav>
-      <div class="nav__actions">
-        <div class="lang-switcher" id="lang-switcher" role="group" aria-label="Language switcher">
-          <button class="lang-btn" id="lang-vn" data-lang="vn">VN</button>
-          <button class="lang-btn" id="lang-en" data-lang="en">EN</button>
-        </div>
-        <button class="btn-print" id="print-cv" aria-label="Print CV">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-          <span data-i18n="print-btn">Print CV</span>
-        </button>
+      <div class="lang-switcher" id="lang-switcher" role="group" aria-label="Language switcher">
+        <button class="lang-btn" id="lang-vn" data-lang="vn">VN</button>
+        <button class="lang-btn" id="lang-en" data-lang="en">EN</button>
       </div>
+      <button class="btn-print" id="print-cv" aria-label="Print CV">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        <span data-i18n="print-btn">Print CV</span>
+      </button>
       <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>

@@ -114,25 +114,17 @@ input, textarea { font-family: inherit; }
 }
 .nav__links a:hover { color: var(--text); }
 
-/* ── NAV ACTIONS ── */
-.nav__actions {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
 /* Lang Pill Switcher */
 .lang-switcher {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
   background: var(--bg-alt);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-full);
   padding: 3px;
   gap: 2px;
+  flex-shrink: 0;
 }
 .lang-btn {
   padding: 5px 14px;
@@ -160,6 +152,7 @@ input, textarea { font-family: inherit; }
 /* Print Button */
 .btn-print {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
   gap: 6px;
   padding: 7px 14px;
@@ -170,6 +163,8 @@ input, textarea { font-family: inherit; }
   background: transparent;
   color: var(--text-muted);
   transition: all 0.2s;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 .btn-print:hover {
   border-color: var(--text);
