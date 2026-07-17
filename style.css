@@ -85,7 +85,9 @@ input, textarea { font-family: inherit; }
 .nav__inner {
   height: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 20px;
 }
 .nav__logo {
@@ -93,21 +95,31 @@ input, textarea { font-family: inherit; }
   font-size: 1.25rem;
   letter-spacing: -.01em;
   margin-right: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
-.nav__links { display: flex; gap: 20px; flex-shrink: 0; }
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  flex-shrink: 1;
+}
 .nav__links a {
   font-size: .875rem;
   font-weight: 500;
   color: var(--text-muted);
   transition: color 0.2s;
+  white-space: nowrap;
 }
 .nav__links a:hover { color: var(--text); }
 
-/* ── NAV ACTIONS (lang + print) ── */
+/* ── NAV ACTIONS ── */
 .nav__actions {
   display: flex;
-  align-items: center;
   flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 8px;
   flex-shrink: 0;
 }
