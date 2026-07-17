@@ -113,9 +113,13 @@
      LANGUAGE SWITCHER
   ════════════════════════════════════ */
   let currentLang = localStorage.getItem('cv-lang') || 'en';
-  const langToggle = document.getElementById('lang-toggle');
-  const langLabel  = document.getElementById('lang-label');
-  const langFlag   = langToggle ? langToggle.querySelector('.lang-flag') : null;
+  const btnVN = document.getElementById('lang-vn');
+  const btnEN = document.getElementById('lang-en');
+
+  function updateLangButtons(lang) {
+    if (btnVN) btnVN.classList.toggle('active', lang === 'vn');
+    if (btnEN) btnEN.classList.toggle('active', lang === 'en');
+  }
 
   function applyLang(lang) {
     // Text nodes
@@ -133,27 +137,14 @@
       const key = el.getAttribute('data-i18n-placeholder');
       if (i18n[lang][key] !== undefined) el.placeholder = i18n[lang][key];
     });
-    // Update button
-    if (lang === 'vn') {
-      if (langFlag) langFlag.textContent = '🇺🇸';
-      if (langLabel) langLabel.textContent = 'EN';
-      if (langToggle) langToggle.classList.add('active-vn');
-      document.documentElement.lang = 'vi';
-    } else {
-      if (langFlag) langFlag.textContent = '🇻🇳';
-      if (langLabel) langLabel.textContent = 'VN';
-      if (langToggle) langToggle.classList.remove('active-vn');
-      document.documentElement.lang = 'en';
-    }
+    updateLangButtons(lang);
+    document.documentElement.lang = lang === 'vn' ? 'vi' : 'en';
     localStorage.setItem('cv-lang', lang);
     currentLang = lang;
   }
 
-  if (langToggle) {
-    langToggle.addEventListener('click', () => {
-      applyLang(currentLang === 'en' ? 'vn' : 'en');
-    });
-  }
+  if (btnVN) btnVN.addEventListener('click', () => applyLang('vn'));
+  if (btnEN) btnEN.addEventListener('click', () => applyLang('en'));
 
   // Apply saved language on load
   applyLang(currentLang);

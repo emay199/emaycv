@@ -110,29 +110,38 @@ input, textarea { font-family: inherit; }
   gap: 8px;
 }
 
-/* Lang Toggle */
-.btn-lang {
+/* Lang Pill Switcher */
+.lang-switcher {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
-  font-size: .8125rem;
-  font-weight: 700;
-  border-radius: var(--radius-sm);
+  background: var(--bg-alt);
   border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 3px;
+  gap: 2px;
+}
+.lang-btn {
+  padding: 5px 14px;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  border-radius: var(--radius-full);
+  border: none;
   background: transparent;
+  color: var(--text-muted);
+  transition: all 0.2s var(--ease-out);
+  cursor: pointer;
+  line-height: 1;
+}
+.lang-btn.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(27,107,90,.25);
+}
+.lang-btn:not(.active):hover {
   color: var(--text);
-  transition: all 0.2s;
-  letter-spacing: .03em;
+  background: var(--border);
 }
-.btn-lang:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: var(--accent-light);
-}
-.btn-lang.active-vn { background: var(--accent-light); color: var(--accent); border-color: var(--accent); }
-.lang-flag { font-size: 1rem; line-height: 1; }
-.lang-text { font-size: .75rem; font-weight: 700; letter-spacing: .05em; }
 
 /* Print Button */
 .btn-print {
