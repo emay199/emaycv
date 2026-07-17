@@ -21,25 +21,35 @@
     <div class="nav__inner container">
       <a href="#hero" class="nav__logo" id="nav-logo">emay<span class="dot">.</span>dev</a>
       <nav class="nav__links" id="nav-links">
-        <a href="#about" id="nav-about">About</a>
-        <a href="#skills" id="nav-skills">Skills</a>
-        <a href="#experience" id="nav-experience">Experience</a>
-        <a href="#projects" id="nav-projects">Projects</a>
-        <a href="#education" id="nav-education">Education</a>
-        <a href="#contact" id="nav-contact-link">Contact</a>
+        <a href="#about" id="nav-about" data-i18n="nav-about">About</a>
+        <a href="#skills" id="nav-skills" data-i18n="nav-skills">Skills</a>
+        <a href="#experience" id="nav-experience" data-i18n="nav-experience">Experience</a>
+        <a href="#projects" id="nav-projects" data-i18n="nav-projects">Projects</a>
+        <a href="#education" id="nav-education" data-i18n="nav-education">Education</a>
+        <a href="#contact" id="nav-contact-link" data-i18n="nav-contact">Contact</a>
       </nav>
-      <a href="#contact" class="btn btn--sm" id="nav-cta">Hire Me</a>
+      <div class="nav__actions">
+        <button class="btn-lang" id="lang-toggle" aria-label="Switch language" title="Chuyển ngôn ngữ">
+          <span class="lang-flag">🇻🇳</span>
+          <span class="lang-text" id="lang-label">VN</span>
+        </button>
+        <button class="btn-print" id="print-cv" aria-label="Print CV">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          <span data-i18n="print-btn">Print CV</span>
+        </button>
+        <a href="#contact" class="btn btn--sm" id="nav-cta" data-i18n="nav-cta">Hire Me</a>
+      </div>
       <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="nav__mobile" id="mobile-menu">
-      <a href="#about" id="mob-about">About</a>
-      <a href="#skills" id="mob-skills">Skills</a>
-      <a href="#experience" id="mob-experience">Experience</a>
-      <a href="#projects" id="mob-projects">Projects</a>
-      <a href="#education" id="mob-education">Education</a>
-      <a href="#contact" id="mob-contact">Contact</a>
+      <a href="#about" id="mob-about" data-i18n="nav-about">About</a>
+      <a href="#skills" id="mob-skills" data-i18n="nav-skills">Skills</a>
+      <a href="#experience" id="mob-experience" data-i18n="nav-experience">Experience</a>
+      <a href="#projects" id="mob-projects" data-i18n="nav-projects">Projects</a>
+      <a href="#education" id="mob-education" data-i18n="nav-education">Education</a>
+      <a href="#contact" id="mob-contact" data-i18n="nav-contact">Contact</a>
     </div>
   </header>
 
@@ -52,30 +62,28 @@
     </div>
     <div class="container hero__inner">
       <div class="hero__content" data-animate="fade-up">
-        <span class="hero__tag" id="hero-tag">QA Software Engineer</span>
-        <h1 class="hero__name" id="hero-name">
-          Hi, I'm <em>Emay</em>
-        </h1>
-        <p class="hero__subtitle" id="hero-subtitle">
+        <span class="hero__tag" id="hero-tag" data-i18n="hero-tag">QA Software Engineer</span>
+        <h1 class="hero__name" id="hero-name" data-i18n-html="hero-name">Hi, I'm <em>Emay</em></h1>
+        <p class="hero__subtitle" id="hero-subtitle" data-i18n-html="hero-subtitle">
           I build confidence into software — through structured testing,<br />
           automation frameworks, and an obsession with quality.
         </p>
         <div class="hero__actions">
-          <a href="#projects" class="btn btn--primary" id="hero-cta-primary">View My Work</a>
-          <a href="assets/resume.pdf" class="btn btn--outline" id="hero-cta-resume" download>Download CV</a>
+          <a href="#projects" class="btn btn--primary" id="hero-cta-primary" data-i18n="hero-cta-primary">View My Work</a>
+          <a href="assets/resume.pdf" class="btn btn--outline" id="hero-cta-resume" download data-i18n="hero-cta-resume">Download CV</a>
         </div>
         <div class="hero__stats" id="hero-stats">
           <div class="stat">
             <span class="stat__num" data-target="3">0</span><span class="stat__unit">+</span>
-            <p class="stat__label">Years of Experience</p>
+            <p class="stat__label" data-i18n="stat-years">Years of Experience</p>
           </div>
           <div class="stat">
             <span class="stat__num" data-target="120">0</span><span class="stat__unit">+</span>
-            <p class="stat__label">Test Cases Written</p>
+            <p class="stat__label" data-i18n="stat-tests">Test Cases Written</p>
           </div>
           <div class="stat">
             <span class="stat__num" data-target="15">0</span><span class="stat__unit">+</span>
-            <p class="stat__label">Projects Tested</p>
+            <p class="stat__label" data-i18n="stat-projects">Projects Tested</p>
           </div>
         </div>
       </div>
@@ -84,7 +92,7 @@
         <img src="assets/avatar.png" alt="Emay — QA Engineer" class="hero__avatar" id="hero-avatar" />
         <div class="hero__badge" id="hero-badge">
           <span class="badge__icon">✓</span>
-          <span>Open to work</span>
+          <span data-i18n="badge-open">Open to work</span>
         </div>
       </div>
     </div>
@@ -98,51 +106,43 @@
   <section class="about section" id="about">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-label">01 — About</span>
-        <h2 class="section-title">A little about me</h2>
+        <span class="section-label" data-i18n="about-label">01 — About</span>
+        <h2 class="section-title" data-i18n="about-title">A little about me</h2>
       </div>
       <div class="about__grid">
         <div class="about__text" data-animate="fade-up">
-          <p>
-            I'm a QA Software Engineer with a passion for ensuring digital products work flawlessly.
-            I specialize in building robust automated test suites, identifying edge cases humans miss,
-            and translating complex requirements into precise, repeatable test scenarios.
-          </p>
-          <p>
-            I believe quality is not just a phase — it's a mindset that should be embedded from day one.
-            I work closely with developers, PMs, and stakeholders to shift testing left and catch bugs
-            before they become expensive problems.
-          </p>
+          <p data-i18n="about-p1">I'm a QA Software Engineer with a passion for ensuring digital products work flawlessly. I specialize in building robust automated test suites, identifying edge cases humans miss, and translating complex requirements into precise, repeatable test scenarios.</p>
+          <p data-i18n="about-p2">I believe quality is not just a phase — it's a mindset that should be embedded from day one. I work closely with developers, PMs, and stakeholders to shift testing left and catch bugs before they become expensive problems.</p>
           <div class="about__quick-info" id="about-quick-info">
             <div class="info-item">
               <span class="info-icon">📍</span>
-              <span>Ho Chi Minh City, Vietnam</span>
+              <span data-i18n="about-location">Ho Chi Minh City, Vietnam</span>
             </div>
             <div class="info-item">
               <span class="info-icon">💼</span>
-              <span>Available for freelance & full-time</span>
+              <span data-i18n="about-avail">Available for freelance & full-time</span>
             </div>
             <div class="info-item">
               <span class="info-icon">🌐</span>
-              <span>English & Vietnamese</span>
+              <span data-i18n="about-lang">English & Vietnamese</span>
             </div>
           </div>
         </div>
         <div class="about__values" data-animate="fade-up">
           <div class="value-card" id="value-quality">
             <span class="value-icon">🎯</span>
-            <h3>Quality First</h3>
-            <p>Every build deserves thorough validation before it touches real users.</p>
+            <h3 data-i18n="val-q-title">Quality First</h3>
+            <p data-i18n="val-q-desc">Every build deserves thorough validation before it touches real users.</p>
           </div>
           <div class="value-card" id="value-automation">
             <span class="value-icon">⚡</span>
-            <h3>Automate Everything</h3>
-            <p>If a human does it twice, a machine can do it a thousand times — reliably.</p>
+            <h3 data-i18n="val-a-title">Automate Everything</h3>
+            <p data-i18n="val-a-desc">If a human does it twice, a machine can do it a thousand times — reliably.</p>
           </div>
           <div class="value-card" id="value-collab">
             <span class="value-icon">🤝</span>
-            <h3>Collaborative QA</h3>
-            <p>Testing is a team sport. I bridge the gap between dev, product, and users.</p>
+            <h3 data-i18n="val-c-title">Collaborative QA</h3>
+            <p data-i18n="val-c-desc">Testing is a team sport. I bridge the gap between dev, product, and users.</p>
           </div>
         </div>
       </div>
@@ -153,8 +153,8 @@
   <section class="skills section" id="skills">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-label">02 — Skills</span>
-        <h2 class="section-title">Technical toolkit</h2>
+        <span class="section-label" data-i18n="skills-label">02 — Skills</span>
+        <h2 class="section-title" data-i18n="skills-title">Technical toolkit</h2>
       </div>
       <div class="skills__grid" id="skills-grid">
 
@@ -234,8 +234,8 @@
   <section class="experience section" id="experience">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-label">03 — Experience</span>
-        <h2 class="section-title">Where I've worked</h2>
+        <span class="section-label" data-i18n="exp-label">03 — Experience</span>
+        <h2 class="section-title" data-i18n="exp-title">Where I've worked</h2>
       </div>
       <div class="timeline" id="experience-timeline">
 
@@ -243,16 +243,16 @@
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__meta">
-              <span class="timeline__date">Jan 2024 — Present</span>
-              <span class="timeline__badge">Current</span>
+              <span class="timeline__date" data-i18n="exp1-date">Jan 2024 — Present</span>
+              <span class="timeline__badge" data-i18n="exp1-badge">Current</span>
             </div>
-            <h3 class="timeline__role">QA Automation Engineer</h3>
-            <p class="timeline__company">Company Name Inc. · Ho Chi Minh City</p>
+            <h3 class="timeline__role" data-i18n="exp1-role">QA Automation Engineer</h3>
+            <p class="timeline__company" data-i18n="exp1-company">Company Name Inc. · Ho Chi Minh City</p>
             <ul class="timeline__bullets">
-              <li>Built end-to-end Playwright test suite covering 200+ critical user flows</li>
-              <li>Reduced regression testing time from 8h to 45min via automation</li>
-              <li>Integrated test pipeline into GitHub Actions CI/CD for every PR</li>
-              <li>Defined QA standards and documented test strategies for the team</li>
+              <li data-i18n="exp1-b1">Built end-to-end Playwright test suite covering 200+ critical user flows</li>
+              <li data-i18n="exp1-b2">Reduced regression testing time from 8h to 45min via automation</li>
+              <li data-i18n="exp1-b3">Integrated test pipeline into GitHub Actions CI/CD for every PR</li>
+              <li data-i18n="exp1-b4">Defined QA standards and documented test strategies for the team</li>
             </ul>
             <div class="timeline__tech">
               <span class="tag tag--sm">Playwright</span>
@@ -266,14 +266,14 @@
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__meta">
-              <span class="timeline__date">Jun 2022 — Dec 2023</span>
+              <span class="timeline__date" data-i18n="exp2-date">Jun 2022 — Dec 2023</span>
             </div>
-            <h3 class="timeline__role">Software QA Tester</h3>
-            <p class="timeline__company">Previous Company Ltd. · Ho Chi Minh City</p>
+            <h3 class="timeline__role" data-i18n="exp2-role">Software QA Tester</h3>
+            <p class="timeline__company" data-i18n="exp2-company">Previous Company Ltd. · Ho Chi Minh City</p>
             <ul class="timeline__bullets">
-              <li>Manually tested web and mobile applications across multiple platforms</li>
-              <li>Wrote comprehensive test cases and reported 300+ bugs in Jira</li>
-              <li>Collaborated with dev team in Agile sprints for timely releases</li>
+              <li data-i18n="exp2-b1">Manually tested web and mobile applications across multiple platforms</li>
+              <li data-i18n="exp2-b2">Wrote comprehensive test cases and reported 300+ bugs in Jira</li>
+              <li data-i18n="exp2-b3">Collaborated with dev team in Agile sprints for timely releases</li>
             </ul>
             <div class="timeline__tech">
               <span class="tag tag--sm">Selenium</span>
@@ -291,8 +291,8 @@
   <section class="projects section" id="projects">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-label">04 — Projects</span>
-        <h2 class="section-title">Notable work</h2>
+        <span class="section-label" data-i18n="proj-label">04 — Projects</span>
+        <h2 class="section-title" data-i18n="proj-title">Notable work</h2>
       </div>
       <div class="projects__grid" id="projects-grid">
 
@@ -308,11 +308,8 @@
               </a>
             </div>
           </div>
-          <h3 class="project-card__title">E2E Automation Suite</h3>
-          <p class="project-card__desc">
-            Full end-to-end Playwright test framework for a fintech web platform. 
-            Covers authentication, trading flows, and reporting with 95%+ coverage.
-          </p>
+          <h3 class="project-card__title" data-i18n="proj1-title">E2E Automation Suite</h3>
+          <p class="project-card__desc" data-i18n="proj1-desc">Full end-to-end Playwright test framework for a fintech web platform. Covers authentication, trading flows, and reporting with 95%+ coverage.</p>
           <div class="project-card__tags">
             <span class="tag tag--sm">Playwright</span>
             <span class="tag tag--sm">TypeScript</span>
@@ -332,11 +329,8 @@
               </a>
             </div>
           </div>
-          <h3 class="project-card__title">API Test Framework</h3>
-          <p class="project-card__desc">
-            Python-based REST API testing framework using pytest + requests. 
-            Includes data-driven tests, schema validation, and Allure reports.
-          </p>
+          <h3 class="project-card__title" data-i18n="proj2-title">API Test Framework</h3>
+          <p class="project-card__desc" data-i18n="proj2-desc">Python-based REST API testing framework using pytest + requests. Includes data-driven tests, schema validation, and Allure reports.</p>
           <div class="project-card__tags">
             <span class="tag tag--sm">Python</span>
             <span class="tag tag--sm">pytest</span>
@@ -353,11 +347,8 @@
               </a>
             </div>
           </div>
-          <h3 class="project-card__title">QA Dashboard</h3>
-          <p class="project-card__desc">
-            Internal dashboard for tracking test metrics, coverage reports,
-            and bug trend analytics. Integrated with Jira and GitHub Actions.
-          </p>
+          <h3 class="project-card__title" data-i18n="proj3-title">QA Dashboard</h3>
+          <p class="project-card__desc" data-i18n="proj3-desc">Internal dashboard for tracking test metrics, coverage reports, and bug trend analytics. Integrated with Jira and GitHub Actions.</p>
           <div class="project-card__tags">
             <span class="tag tag--sm">JavaScript</span>
             <span class="tag tag--sm">Jira API</span>
@@ -373,25 +364,25 @@
   <section class="education section" id="education">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-label">05 — Education & Certs</span>
-        <h2 class="section-title">Academic & learning journey</h2>
+        <span class="section-label" data-i18n="edu-label">05 — Education & Certs</span>
+        <h2 class="section-title" data-i18n="edu-title">Academic & learning journey</h2>
       </div>
       <div class="edu-cert__grid">
 
         <div class="edu-side" data-animate="fade-up">
-          <h3 class="edu-cert__subtitle">Education</h3>
+          <h3 class="edu-cert__subtitle" data-i18n="edu-subtitle">Education</h3>
           <div class="edu-item" id="edu-1">
             <div class="edu-item__icon">🎓</div>
             <div>
-              <h4>Bachelor of Computer Science</h4>
-              <p class="edu-item__school">University of Technology · Ho Chi Minh City</p>
+              <h4 data-i18n="edu1-degree">Bachelor of Computer Science</h4>
+              <p class="edu-item__school" data-i18n="edu1-school">University of Technology · Ho Chi Minh City</p>
               <p class="edu-item__year">2018 — 2022</p>
             </div>
           </div>
         </div>
 
         <div class="cert-side" data-animate="fade-up">
-          <h3 class="edu-cert__subtitle">Certifications</h3>
+          <h3 class="edu-cert__subtitle" data-i18n="cert-subtitle">Certifications</h3>
           <div class="cert-list" id="cert-list">
             <div class="cert-item" id="cert-istqb">
               <div class="cert-icon">📜</div>
@@ -436,14 +427,11 @@
   <section class="contact section" id="contact">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-label">06 — Contact</span>
-        <h2 class="section-title">Let's work together</h2>
+        <span class="section-label" data-i18n="contact-label">06 — Contact</span>
+        <h2 class="section-title" data-i18n="contact-title">Let's work together</h2>
       </div>
       <div class="contact__inner" data-animate="fade-up">
-        <p class="contact__intro">
-          Whether you need a QA engineer for a project, want to discuss automation strategies,
-          or just say hello — my inbox is always open.
-        </p>
+        <p class="contact__intro" data-i18n="contact-intro">Whether you need a QA engineer for a project, want to discuss automation strategies, or just say hello — my inbox is always open.</p>
         <div class="contact__links" id="contact-links">
           <a href="mailto:hello@emay.dev" class="contact-link" id="contact-email">
             <span class="contact-link__icon">✉️</span>
@@ -470,20 +458,20 @@
         <form class="contact__form" id="contact-form" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="form-name">Your Name</label>
-              <input type="text" id="form-name" name="name" placeholder="Jane Smith" required />
+              <label for="form-name" data-i18n="form-name-label">Your Name</label>
+              <input type="text" id="form-name" name="name" placeholder="Jane Smith" data-i18n-placeholder="form-name-ph" required />
             </div>
             <div class="form-group">
-              <label for="form-email">Your Email</label>
-              <input type="email" id="form-email" name="email" placeholder="jane@example.com" required />
+              <label for="form-email" data-i18n="form-email-label">Your Email</label>
+              <input type="email" id="form-email" name="email" placeholder="jane@example.com" data-i18n-placeholder="form-email-ph" required />
             </div>
           </div>
           <div class="form-group">
-            <label for="form-message">Message</label>
-            <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            <label for="form-message" data-i18n="form-msg-label">Message</label>
+            <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." data-i18n-placeholder="form-msg-ph" required></textarea>
           </div>
-          <button type="submit" class="btn btn--primary btn--full" id="form-submit">Send Message →</button>
-          <p class="form-note" id="form-note">I typically respond within 24 hours.</p>
+          <button type="submit" class="btn btn--primary btn--full" id="form-submit" data-i18n="form-submit">Send Message →</button>
+          <p class="form-note" id="form-note" data-i18n="form-note">I typically respond within 24 hours.</p>
         </form>
       </div>
     </div>
