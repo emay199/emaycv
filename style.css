@@ -762,7 +762,14 @@ input, textarea { font-family: inherit; }
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 .contact-link:hover { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-light); }
-.contact-link__icon { font-size: 1.375rem; }
+.contact-link__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
 .contact-link__label { display: block; font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); }
 .contact-link__value { display: block; font-size: .9375rem; font-weight: 600; color: var(--text); }
 
