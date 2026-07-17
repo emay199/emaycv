@@ -51,7 +51,7 @@
       'edu1-degree': 'Bachelor of Computer Science',
       'edu1-school': 'University of Technology · Ho Chi Minh City',
       'contact-label': '06 — Contact', 'contact-title': "Let's work together",
-      'contact-intro': 'Whether you need a QA engineer for a project, want to discuss automation strategies, or just say hello — my inbox is always open.',
+      'contact-intro': 'Whether you need a QA engineer for a project or just say hello — my inbox is always open.',
       'form-name-label': 'Your Name', 'form-email-label': 'Your Email', 'form-msg-label': 'Message',
       'form-name-ph': 'Jane Smith', 'form-email-ph': 'jane@example.com',
       'form-msg-ph': 'Tell me about your project or opportunity...',
