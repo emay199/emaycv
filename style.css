@@ -86,9 +86,7 @@ input, textarea { font-family: inherit; }
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 24px;
-  flex-wrap: nowrap;
-  overflow: hidden;
+  gap: 20px;
 }
 .nav__logo {
   font-family: var(--font-display);
@@ -109,9 +107,9 @@ input, textarea { font-family: inherit; }
 .nav__actions {
   display: flex;
   align-items: center;
+  flex-direction: row;
   gap: 8px;
   flex-shrink: 0;
-  margin-left: auto;
 }
 
 /* Lang Pill Switcher */
@@ -249,9 +247,10 @@ input, textarea { font-family: inherit; }
 .nav__mobile.open { display: flex; }
 .nav__mobile-actions {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
-  padding: 12px 24px 4px;
+  padding: 14px 24px;
   border-top: 1px solid var(--border);
   margin-top: 4px;
 }
