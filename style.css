@@ -405,7 +405,8 @@ input, textarea { font-family: inherit; }
   line-height: 1;
   color: var(--text);
 }
-.stat__unit { color: var(--accent); font-weight: 700; font-size: 1.125rem; display: inline; }
+.stat__value { display: flex; align-items: baseline; gap: 1px; }
+.stat__unit { color: var(--accent); font-weight: 700; font-size: 1.125rem; }
 .stat__label { font-size: .8125rem; color: var(--text-muted); }
 
 /* Hero Avatar */
