@@ -101,7 +101,7 @@
       'edu1-degree': 'Cử nhân Khoa học Máy tính',
       'edu1-school': 'Đại học Công nghệ · TP. Hồ Chí Minh',
       'contact-label': '06 — Liên hệ', 'contact-title': 'Hãy cùng làm việc',
-      'contact-intro': 'Dù bạn cần kỹ sư QA cho dự án, muốn thảo luận về chiến lược tự động hóa, hay chỉ muốn chào hỏi — hộp thư của tôi luôn rộng mở.',
+      'contact-intro': 'Dù bạn cần kỹ sư QA cho dự án hay chỉ muốn chào hỏi — hộp thư của tôi luôn rộng mở.',
       'form-name-label': 'Họ và tên', 'form-email-label': 'Email của bạn', 'form-msg-label': 'Nội dung',
       'form-name-ph': 'Nguyễn Văn A', 'form-email-ph': 'email@example.com',
       'form-msg-ph': 'Hãy cho tôi biết về dự án hoặc cơ hội của bạn...',
