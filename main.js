@@ -30,7 +30,7 @@
       'exp-label': '03 — Experience', 'exp-title': "Where I've worked",
       'exp1-date': 'Oct 2023 — Present', 'exp1-badge': 'Current',
       'exp1-role': 'Senior QA Engineer', 'exp1-company': 'Amnis Finance · Hanoi, Vietnam',
-      'exp2-company-desc': 'Amnis Finance is a decentralized finance (DeFi) protocol built on the Aptos blockchain, providing liquid staking solutions that enable users to stake digital assets, earn rewards, and maintain liquidity within the Web3 ecosystem.',
+      'exp1-company-desc': 'Amnis Finance is a decentralized finance (DeFi) protocol built on the Aptos blockchain, providing liquid staking solutions that enable users to stake digital assets, earn rewards, and maintain liquidity within the Web3 ecosystem.',
       'exp1-b1': 'Built end-to-end Playwright test suite covering 200+ critical user flows',
       'exp1-b2': 'Reduced regression testing time from 8h to 45min via automation',
       'exp1-b3': 'Integrated test pipeline into GitHub Actions CI/CD for every PR',
