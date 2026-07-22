@@ -692,8 +692,8 @@ input, textarea { font-family: inherit; }
 }
 .sub-project__meta {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
+  gap: 4px;
   font-size: .75rem;
   color: var(--text-muted);
 }
