@@ -698,7 +698,7 @@ input, textarea { font-family: inherit; }
   font-size: .75rem;
   color: var(--text-muted);
 }
-.sub-project__customer { display: block; font-style: italic; }
+.sub-project__customer { display: block; }
 .sub-project__tech { display: block; opacity: .8; }
 
 /* ════ PROJECTS ════ */
