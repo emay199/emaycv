@@ -635,7 +635,7 @@ input, textarea { font-family: inherit; }
 .timeline__bullets li {
   font-size: .9375rem;
   color: var(--text-muted);
-  padding-left: 16px;
+  padding-left: 22px;
   position: relative;
 }
 .timeline__bullets li::before {
@@ -644,6 +644,7 @@ input, textarea { font-family: inherit; }
   left: 0;
   color: var(--accent);
   font-weight: 700;
+  letter-spacing: 4px;
 }
 .timeline__tech { display: flex; flex-wrap: wrap; gap: 6px; }
 
