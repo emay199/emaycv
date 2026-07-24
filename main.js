@@ -97,7 +97,7 @@
       'nav-cta': 'Thuê tôi', 'print-btn': 'In CV',
       'hero-tag': 'Kỹ sư Kiểm thử Phần mềm',
       'hero-name': "Xin chào, tôi là <em>Minh Anh</em>",
-      'hero-subtitle': 'Tôi đảm bảo phần mềm hoạt động hoàn hảo — thông qua kiểm thử có cấu trúc,<br />framework tự động hóa, và niềm đam mê chất lượng.',
+      'hero-subtitle': 'Mình là QA Engineer với 5 năm kinh nghiệm, chuyên kiểm thử các sản phẩm Web2 và Web3. Mình tập trung đảm bảo chất lượng từ Frontend, Backend, API đến Smart Contract để mỗi tính năng đều hoạt động ổn định trước khi đến tay người dùng.',
       'hero-cta-primary': 'Xem dự án', 'hero-cta-resume': 'Tải CV',
       'badge-open': 'Đang tìm việc',
       'stat-years': 'Năm kinh nghiệm', 'stat-tests': 'Test case đã viết', 'stat-projects': 'Dự án đã test',
