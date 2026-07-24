@@ -700,6 +700,28 @@ input, textarea { font-family: inherit; }
 }
 .sub-project__customer { display: block; }
 .sub-project__tech { display: block; opacity: .8; }
+.sub-project__bullets {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+}
+.sub-project__bullets li {
+  font-size: .82rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  padding-left: 14px;
+  position: relative;
+}
+.sub-project__bullets li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
 
 /* ════ PROJECTS ════ */
 .projects__grid {
