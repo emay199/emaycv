@@ -216,11 +216,12 @@
   const printBtn = document.getElementById('print-cv');
   if (printBtn) {
     printBtn.addEventListener('click', () => {
-      // Ensure skill bars are filled before printing
-      document.querySelectorAll('.skill-bar__fill[data-width]').forEach(bar => {
-        bar.style.width = bar.getAttribute('data-width') + '%';
-      });
-      window.print();
+      const link = document.createElement('a');
+      link.href = 'assets/resume.pdf';
+      link.download = '[Senior QA] Quach Minh Anh _CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     });
   }
 
