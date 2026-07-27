@@ -216,12 +216,7 @@
   const printBtn = document.getElementById('print-cv');
   if (printBtn) {
     printBtn.addEventListener('click', () => {
-      const link = document.createElement('a');
-      link.href = 'assets/resume.pdf';
-      link.download = '[Senior QA] Quach Minh Anh _CV.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      window.open('assets/resume.pdf', '_blank');
     });
   }
 
