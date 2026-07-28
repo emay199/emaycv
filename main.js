@@ -13,7 +13,7 @@
       'nav-cta': 'Hire Me', 'print-btn': 'Print CV',
       'hero-tag': 'QA Software Engineer',
       'hero-name': "Hi, I'm <em>Emay</em>",
-      'hero-subtitle': 'I build confidence into software — through structured testing,<br />automation frameworks, and an obsession with quality.',
+      'hero-subtitle': 'QA Engineer with 5 years of experience in software quality assurance across Web2 and Web3 applications. Experienced in testing blockchain products, including staking, DEX, lending, DAO governance, incentive programs, airdrops, smart contracts, and on-chain features, with a solid foundation in ERP systems.',
       'hero-cta-primary': 'View My Work', 'hero-cta-resume': 'Download CV',
       'badge-open': 'Open to work',
       'stat-years': 'Years of Experience', 'stat-tests': 'Test Cases Written', 'stat-projects': 'Projects Tested',
