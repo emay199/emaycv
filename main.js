@@ -311,7 +311,7 @@
   const submitBtn = document.getElementById('form-submit');
   const formNote  = document.getElementById('form-note');
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const name    = document.getElementById('form-name').value.trim();
     const email   = document.getElementById('form-email').value.trim();
@@ -326,20 +326,37 @@
       formNote.textContent = currentLang === 'vn' ? '⚠️ Email không hợp lệ.' : '⚠️ Please enter a valid email address.';
       formNote.style.color = '#C0392B'; return;
     }
+
     submitBtn.textContent = currentLang === 'vn' ? 'Đang gửi…' : 'Sending…';
     submitBtn.disabled = true;
-    setTimeout(() => {
-      submitBtn.textContent = currentLang === 'vn' ? '✅ Đã gửi!' : '✅ Message Sent!';
-      formNote.textContent  = currentLang === 'vn' ? 'Cảm ơn! Tôi sẽ phản hồi sớm.' : "Thank you! I'll be in touch soon.";
-      formNote.style.color  = '#1B6B5A';
-      form.reset();
-      setTimeout(() => {
-        submitBtn.textContent = t['form-submit'];
-        submitBtn.disabled    = false;
-        formNote.textContent  = t['form-note'];
-        formNote.style.color  = '';
-      }, 3500);
-    }, 1200);
+
+    try {
+      const res = await fetch('https://formspree.io/f/mzdnwoan', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      });
+
+      if (res.ok) {
+        submitBtn.textContent = currentLang === 'vn' ? '✅ Đã gửi!' : '✅ Message Sent!';
+        formNote.textContent  = currentLang === 'vn' ? 'Cảm ơn! Mình sẽ phản hồi sớm.' : "Thank you! I'll be in touch soon.";
+        formNote.style.color  = '#1B6B5A';
+        form.reset();
+        setTimeout(() => {
+          submitBtn.textContent = t['form-submit'];
+          submitBtn.disabled    = false;
+          formNote.textContent  = t['form-note'];
+          formNote.style.color  = '';
+        }, 4000);
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      submitBtn.textContent = currentLang === 'vn' ? '❌ Gửi thất bại' : '❌ Failed to send';
+      formNote.textContent  = currentLang === 'vn' ? 'Vui lòng thử lại hoặc liên hệ trực tiếp qua email.' : 'Please try again or contact directly via email.';
+      formNote.style.color  = '#C0392B';
+      submitBtn.disabled    = false;
+    }
   });
 
   /* ════════════════════════════════════
